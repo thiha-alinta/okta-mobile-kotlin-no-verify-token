@@ -1,0 +1,116 @@
+public abstract interface class com/okta/webauthenticationui/ForegroundActivityEvent : com/okta/authfoundation/events/Event {
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnBackPressed : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnBackPressed;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnCreate : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnCreate;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnDestroy : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnDestroy;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnNewIntent : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnNewIntent;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnPause : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnPause;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundActivityEvent$OnResume : com/okta/webauthenticationui/ForegroundActivityEvent {
+	public static final field INSTANCE Lcom/okta/webauthenticationui/ForegroundActivityEvent$OnResume;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/webauthenticationui/ForegroundViewModel$State$AwaitingBrowserCallback$Creator : android/os/Parcelable$Creator {
+	public fun <init> ()V
+	public final fun createFromParcel (Landroid/os/Parcel;)Lcom/okta/webauthenticationui/ForegroundViewModel$State$AwaitingBrowserCallback;
+	public synthetic fun createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+	public final fun newArray (I)[Lcom/okta/webauthenticationui/ForegroundViewModel$State$AwaitingBrowserCallback;
+	public synthetic fun newArray (I)[Ljava/lang/Object;
+}
+
+public final class com/okta/webauthenticationui/ForegroundViewModel$State$AwaitingInitialization$Creator : android/os/Parcelable$Creator {
+	public fun <init> ()V
+	public final fun createFromParcel (Landroid/os/Parcel;)Lcom/okta/webauthenticationui/ForegroundViewModel$State$AwaitingInitialization;
+	public synthetic fun createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+	public final fun newArray (I)[Lcom/okta/webauthenticationui/ForegroundViewModel$State$AwaitingInitialization;
+	public synthetic fun newArray (I)[Ljava/lang/Object;
+}
+
+public final class com/okta/webauthenticationui/ForegroundViewModel$State$Error$Creator : android/os/Parcelable$Creator {
+	public fun <init> ()V
+	public final fun createFromParcel (Landroid/os/Parcel;)Lcom/okta/webauthenticationui/ForegroundViewModel$State$Error;
+	public synthetic fun createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+	public final fun newArray (I)[Lcom/okta/webauthenticationui/ForegroundViewModel$State$Error;
+	public synthetic fun newArray (I)[Ljava/lang/Object;
+}
+
+public final class com/okta/webauthenticationui/ForegroundViewModel$State$LaunchBrowser$Creator : android/os/Parcelable$Creator {
+	public fun <init> ()V
+	public final fun createFromParcel (Landroid/os/Parcel;)Lcom/okta/webauthenticationui/ForegroundViewModel$State$LaunchBrowser;
+	public synthetic fun createFromParcel (Landroid/os/Parcel;)Ljava/lang/Object;
+	public final fun newArray (I)[Lcom/okta/webauthenticationui/ForegroundViewModel$State$LaunchBrowser;
+	public synthetic fun newArray (I)[Ljava/lang/Object;
+}
+
+public final class com/okta/webauthenticationui/WebAuthentication {
+	public static final field Companion Lcom/okta/webauthenticationui/WebAuthentication$Companion;
+	public fun <init> (Lcom/okta/authfoundation/client/OAuth2Client;Lcom/okta/webauthenticationui/WebAuthenticationProvider;)V
+	public synthetic fun <init> (Lcom/okta/authfoundation/client/OAuth2Client;Lcom/okta/webauthenticationui/WebAuthenticationProvider;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Lcom/okta/authfoundation/client/OidcConfiguration;Lcom/okta/webauthenticationui/WebAuthenticationProvider;)V
+	public synthetic fun <init> (Lcom/okta/authfoundation/client/OidcConfiguration;Lcom/okta/webauthenticationui/WebAuthenticationProvider;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Lcom/okta/webauthenticationui/WebAuthenticationProvider;)V
+	public synthetic fun <init> (Lcom/okta/webauthenticationui/WebAuthenticationProvider;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getAuthorizationCodeFlow ()Lcom/okta/oauth2/AuthorizationCodeFlow;
+	public final fun getRedirectEndSessionFlow ()Lcom/okta/oauth2/RedirectEndSessionFlow;
+	public final fun login (Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun login$default (Lcom/okta/webauthenticationui/WebAuthentication;Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun logoutOfBrowser (Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun setAuthorizationCodeFlow (Lcom/okta/oauth2/AuthorizationCodeFlow;)V
+	public final fun setRedirectEndSessionFlow (Lcom/okta/oauth2/RedirectEndSessionFlow;)V
+}
+
+public final class com/okta/webauthenticationui/WebAuthentication$Companion {
+}
+
+public final class com/okta/webauthenticationui/WebAuthentication$FlowCancelledException : java/lang/Exception {
+}
+
+public abstract interface class com/okta/webauthenticationui/WebAuthenticationProvider {
+	public abstract fun launch (Landroid/content/Context;Lokhttp3/HttpUrl;)Ljava/lang/Exception;
+}
+
+public final class com/okta/webauthenticationui/events/CustomizeBrowserEvent : com/okta/authfoundation/events/Event {
+	public fun <init> ()V
+	public final fun getPreferredBrowsers ()Ljava/util/List;
+	public final fun getQueryIntentServicesFlags ()I
+	public final fun setQueryIntentServicesFlags (I)V
+}
+
+public final class com/okta/webauthenticationui/events/CustomizeCustomTabsEvent : com/okta/authfoundation/events/Event {
+	public final fun getContext ()Landroid/content/Context;
+	public final fun getIntentBuilder ()Landroidx/browser/customtabs/CustomTabsIntent$Builder;
+}
+

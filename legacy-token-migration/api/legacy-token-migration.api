@@ -1,0 +1,38 @@
+public final class com/okta/legacytokenmigration/LegacyTokenMigration {
+	public static final field INSTANCE Lcom/okta/legacytokenmigration/LegacyTokenMigration;
+	public final fun migrate (Landroid/content/Context;Lcom/okta/oidc/clients/sessions/SessionClient;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract class com/okta/legacytokenmigration/LegacyTokenMigration$Result {
+}
+
+public final class com/okta/legacytokenmigration/LegacyTokenMigration$Result$Error : com/okta/legacytokenmigration/LegacyTokenMigration$Result {
+	public final fun getException ()Ljava/lang/Exception;
+}
+
+public final class com/okta/legacytokenmigration/LegacyTokenMigration$Result$MissingLegacyToken : com/okta/legacytokenmigration/LegacyTokenMigration$Result {
+	public static final field INSTANCE Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$MissingLegacyToken;
+}
+
+public final class com/okta/legacytokenmigration/LegacyTokenMigration$Result$PreviouslyMigrated : com/okta/legacytokenmigration/LegacyTokenMigration$Result {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$PreviouslyMigrated;
+	public static synthetic fun copy$default (Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$PreviouslyMigrated;Ljava/lang/String;ILjava/lang/Object;)Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$PreviouslyMigrated;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getTokenId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/okta/legacytokenmigration/LegacyTokenMigration$Result$SuccessfullyMigrated : com/okta/legacytokenmigration/LegacyTokenMigration$Result {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$SuccessfullyMigrated;
+	public static synthetic fun copy$default (Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$SuccessfullyMigrated;Ljava/lang/String;ILjava/lang/Object;)Lcom/okta/legacytokenmigration/LegacyTokenMigration$Result$SuccessfullyMigrated;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getTokenId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
